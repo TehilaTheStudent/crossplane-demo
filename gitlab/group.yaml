@@ -4,11 +4,7 @@ metadata:
   name: example-group-demo
 spec:
   forProvider:
-    description: example group description
     name: Example Group Demo
-    path: example_group_demo
+    path: example_group_demo1
   providerConfigRef:
     name: gitlab-provider
-  writeConnectionSecretToRef:
-    name: gitlab-group-example-group
-    namespace: crossplane-system
