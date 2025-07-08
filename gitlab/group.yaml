@@ -1,0 +1,19 @@
+apiVersion: groups.gitlab.crossplane.io/v1alpha1
+kind: Group
+metadata:
+  name: example-group-demo
+spec:
+  forProvider:
+    description: example group description
+    name: Example Group Demo
+    path: example-group-demo
+    sharedWithGroups:
+      - groupAccessLevel: 1
+        groupId: 1
+      - groupAccessLevel: 2
+        groupId: 2
+  providerConfigRef:
+    name: gitlab-provider
+  writeConnectionSecretToRef:
+    name: gitlab-group-example-group
+    namespace: crossplane-system

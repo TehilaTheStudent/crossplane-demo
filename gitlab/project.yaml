@@ -6,5 +6,7 @@ spec:
   forProvider:
     description: example project description
     name: Example Project Demo
+    defaultBranch: main
+    initializeWithReadme: true
   providerConfigRef:
     name: gitlab-provider
