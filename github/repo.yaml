@@ -3,6 +3,7 @@ kind: Repository
 metadata:
   name: hello-provider-github
 spec:
-  forProvider: {}
+  forProvider: 
+    name: some-name
   providerConfigRef:
     name: github-provider-config
