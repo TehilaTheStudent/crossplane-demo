@@ -6,12 +6,7 @@ spec:
   forProvider:
     description: example group description
     name: Example Group Demo
-    path: example-group-demo
-    sharedWithGroups:
-      - groupAccessLevel: 1
-        groupId: 1
-      - groupAccessLevel: 2
-        groupId: 2
+    path: example_group_demo
   providerConfigRef:
     name: gitlab-provider
   writeConnectionSecretToRef:
